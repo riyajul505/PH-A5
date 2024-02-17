@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Styles -->
+    <style>
+      .font-raleway {
+        font-family: "Raleway", sans-serif;
+      }
+      .font-inter {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+    <!-- Daisy and Tailwing -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="">
+    <header class="container mx-auto px-1 lg:px-24">
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Destination</a></li>
+                <li><a>Search</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-xl pl-0"
+              ><span class="font-raleway text-4xl font-extrabold"
+                >R-Ticket</span
+              ></a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul
+              class="menu menu-horizontal px-1 font-medium font-raleway text-lg"
+            >
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a class="btn border-[1px] border-[#1DD100] bg-[#1DD1001A]"
+              ><span class="font-bold text-xl font-raleway">Bus</span>
+              <img src="images/bus-icon.png" alt="" srcset=""
+            /></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="">
+      <!-- Hero Section -->
+      <section class="container mx-auto px-1 lg:px-24">
+        <div
+          class="hero h-[500px] border-0"
+          style="
+            background-image: url(images/banner.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+          "
+        >
+          <div class="hero-overlay"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md">
+              <h1 class="mb-5 text-6xl font-raleway text-white font-extrabold">
+                End-to-End Travel with <br />
+                <span class="text-[#1DD100]">RL Paribahan</span>
+              </h1>
+              <p class="mb-5 font-inter text-lg text-[#FFFFFF]">
+                Yes, you can run unit tests and view the results directly within
+                the app. The integrated testing features allow for a streamlined
+                .
+              </p>
+              <button
+                class="btn font-raleway font-bold text-xl bg-[#1DD100] border-0"
+              >
+                Buy Tickets
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Best Offer -->
+      <section class="container mx-auto px-1 lg:px-24 mt-16 mb-24">
+        <h1 class="text-center font-raleway font-bold text-4xl mb-12">
+          Best Offers for you
+        </h1>
+        <div class="flex gap-6">
+          <div class="flex flex-1 h-[200px] bg-[#FFBF0F] rounded-3xl">
+            <div class="ml-[51px] mt-[40px]">
+              <h2 class="font-inter text-[40px] font-black">15% OFF</h2>
+              <h3 class="font-inter font-semibold text-xl">
+                on your next purchase
+              </h3>
+              <p class="font-inter font-medium text-lg mt-2">
+                use by january 2024
+              </p>
+            </div>
+            <img src="/images/cupon-devider.png" alt="" srcset="" />
+            <div class="ml-6 mt-16">
+              <h2 class="font-raleway font-bold text-3xl text-center">NEW15</h2>
+              <p class="font-raleway font-medium text-xl text-[ #03071266]">
+                Coupon Code
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-1 h-[200px] bg-[#F78C9C] rounded-3xl">
+            <div class="ml-[51px] mt-[40px]">
+              <h2 class="font-inter text-[40px] font-black">20% OFF</h2>
+              <h3 class="font-inter font-semibold text-xl">
+                on your next purchase
+              </h3>
+              <p class="font-inter font-medium text-lg mt-2">
+                use by january 2024
+              </p>
+            </div>
+            <img src="/images/cupon-devider.png" alt="" srcset="" />
+            <div class="ml-6 mt-16">
+              <h2 class="font-raleway font-bold text-3xl text-center">
+                Couple 20
+              </h2>
+              <p class="font-raleway font-medium text-xl text-[ #03071266]">
+                Coupon Code
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-center">
+          <button
+            class="btn font-raleway font-bold text-xl text-[#1DD100] bg-white border-1 border-[#1DD100] mt-[62px]"
+          >
+            See All Offers
+          </button>
+        </div>
+      </section>
+      <!-- Ticket Dashboard -->
+      <section
+        class="w-full bg-[#F7F8F8] rounded-t-[88px] border-t-[#1DD100] border-t-[2px]"
+      >
+        <div class="container mx-auto px-1 lg:px-24">
+          <h1 class="text-center font-raleway text-4xl font-bold mt-24 mb-6">
+            R.L Paribahan
+          </h1>
+          <p class="font-inter text-xl text-[#03071299] text-center">
+            Yes, you can run unit tests and view the results directly within the
+            app. The integrated <br />
+            testing features allow for a streamlined .
+          </p>
+          <!-- Route Section -->
+          <div class="flex h-[418px] mb-10 bg-white mt-12 rounded-3xl flex-1">
+            <div class="p-8 w-[75%]">
+              <div class="flex justify-between items-center">
+                <div class="flex justify-center items-center">
+                  <img
+                    class="w-[68px] h-[48px]"
+                    src="images/bus-logo.png"
+                    alt=""
+                    srcset=""
+                  />
+                  <div class="ml-4">
+                    <p class="font-raleway font-bold text-[32px]">
+                      Greenline Paribahan
+                    </p>
+                    <span
+                      class="font-inter text-lg font-normal text-[#03071299]"
+                      >Coach-009-web ! AC_Business</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="flex gap-2 items-center justify-center rounded-xl p-[17px] border bg-[#1DD10026]"
+                >
+                  <img src="images/seat-green.png" alt="" srcset="" /><span
+                    class="font-inter text-lg text-[#1DD100] font-medium"
+                    >40 Seats left</span
+                  >
+                </div>
+              </div>
+              <!-- Greenline Parbahan Section complete -->
+
+              <div class="p-8 w-full bg-[#F7F8F8] mt-6 rounded-3xl space-y-6">
+                <div class="flex justify-between">
+                  <span
+                    class="font-raleway text-lg font-semibold text-[#03071299]"
+                    >Route</span
+                  >
+                  <span class="font-raleway font-semibold text-lg"
+                    >Dhaka-Sylhet</span
+                  >
+                </div>
+                <hr />
+                <div class="flex justify-between">
+                  <span
+                    class="font-raleway text-lg font-semibold text-[#03071299]"
+                    >Departure Time</span
+                  >
+                  <span class="font-raleway font-semibold text-lg"
+                    >9:00 PM</span
+                  >
+                </div>
+                <hr />
+                <div class="flex justify-evenly">
+                  <span
+                    class="p-4 bg-[#0307120D] font-inter font-medium border rounded-xl text-base"
+                    >Boarding Point - Laxmipur</span
+                  >
+                  <span
+                    class="p-4 bg-[#0307120D] font-inter font-medium border rounded-xl text-base"
+                    >Dropping Point - Bogura</span
+                  >
+                  <span
+                    class="p-4 bg-[#0307120D] font-inter font-medium border rounded-xl text-base"
+                    >Est. Time - 11 Hour</span
+                  >
+                </div>
+              </div>
+              <!-- Route, Departure time, Boarding Complete -->
+            </div>
+
+            <img class="" src="images/info-devider.png" alt="" srcset="" />
+            <!-- Per seat 550tk -->
+            <div class="ml-5 mt-[136px]">
+              <img
+                src="images/fare.png"
+                class="block m-auto"
+                alt=""
+                srcset=""
+              />
+              <h1 class="font-raleway font-bold text-[32px] text-center">
+                550 Taka
+              </h1>
+              <p
+                class="font-raleway font-semibold text-2xl text-center text-[#03071299]"
+              >
+                Per Seat
+              </p>
+            </div>
+          </div>
+          <!-- Seat and Form Section -->
+        </div>
+      </section>
+      <h1>Test</h1>
+      <br /><br /><br /><br /><br /><br />
+    </main>
+    <footer></footer>
+  </body>
+</html>
