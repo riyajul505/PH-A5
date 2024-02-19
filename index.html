@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>RL Paribahan</title>
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -382,32 +382,32 @@
                 <!-- A1 - J4 -->
                 <div class="flex gap-[66px]">
                   <div class="grid grid-cols-2 gap-[25px]">
-                    <button onclick="buttonClicked('a1')" id="a1"
+                    <button onclick="buttonClicked('A1')" id="A1"
                       class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
                     >
                       A1
                     </button>
-                    <button onclick="buttonClicked('a2')" id="a2"
+                    <button onclick="buttonClicked('A2')" id="A2"
                       class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
                     >
                       A2
                     </button>
-                    <button onclick="buttonClicked('b1')" id="b1"
+                    <button onclick="buttonClicked('B1')" id="B1"
                       class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
                     >
                       B1
                     </button>
-                    <button onclick="buttonClicked('b2')" id="b2"
+                    <button onclick="buttonClicked('B2')" id="B2"
                       class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
                     >
                       B2
                     </button>
-                    <button onclick="buttonClicked('c1')" id="c1"
+                    <button onclick="buttonClicked('C1')" id="C1"
                       class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
                     >
                       C1
                     </button>
-                    <button onclick="buttonClicked('c2')" id="c2"
+                    <button onclick="buttonClicked('C2')" id="C2"
                       class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
                     >
                       C2
@@ -484,27 +484,27 @@
                     </button>
                   </div>
                   <div class="grid grid-cols-2 gap-[25px]">
-                    <button
+                    <button id="A3" onclick="buttonClicked('A3')"
                       class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
                     >
                       A3
                     </button>
-                    <button
-                      class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
+                    <button id="A4" onclick="buttonClicked('A4')"
+                      class = "bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
                     >
                       A4
                     </button>
-                    <button
+                    <button id="B3" onclick="buttonClicked('B3')"
                       class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
                     >
                       B3
                     </button>
-                    <button
+                    <button id="B4" onclick="buttonClicked('B4')"
                       class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
                     >
                       B4
                     </button>
-                    <button
+                    <button id="B5" onclick="buttonClicked('B5')"
                       class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
                     >
                       C3
@@ -611,20 +611,21 @@
                   <span id="total-price">BDT 00</span>
                 </div>
                 <!-- Coupon code -->
-                <div class="flex justify-between bg-white rounded-2xl">
-                  <input type="text" name="" id="" class="border-0 px-4" placeholder="Have a coupon?">
-                  <button class="btn">Apply</button>
+                <div id="coupon-div" class="flex justify-between bg-white rounded-2xl">
+                  <input type="text" name="" onclick="coupon()" id="coupon-code" class="border-0 px-4" placeholder="Have a coupon?">
+                  <button id="coupon-button" onclick="couponApply()" class="btn bg-[#1DD100] text-white" disabled>Apply</button>
                 </div>
+                <hr>
                 <!-- Grand Total -->
                 <div class="flex justify-between">
                   <span>Grand Total</span>
-                  <span>BDT 00</span>
+                  <span id="grand-total">BDT 00</span>
                 </div>
                 
               </div>
               <!-- Username Email Number Form -->
               <div class="space-y-3">
-                <h1>Passenger Name*</h1>
+                <h1>Passenger Name</h1>
                 <label class="input input-bordered flex items-center gap-2">
                   <input type="text" class="grow" placeholder="Username" />
                 </label>
@@ -637,7 +638,7 @@
                   <input type="email" class="grow" placeholder="Email" />
                 </label>
               </div>
-              <button class="btn bg-[#1DD100] rounded-xl w-full">Next</button>
+              <button class="btn text-white bg-[#1DD100] rounded-xl w-full"><a href="success.html">Next</a></button>
               <div class="flex justify-evenly">
                 <p class="underline">Terms and Conditon</p>
                 <p class="underline">Cancellation Policy</p>

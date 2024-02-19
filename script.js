@@ -12,6 +12,10 @@ function buttonClicked(id) {
   // Updading total price
   const totalPrice = getById("total-price");
   totalPrice.innerText = `BDT ${totalClicked * 550}`;
+
+  // Grand Total update
+  const grandTotal = getById("grand-total");
+  grandTotal.innerText = `BDT ${totalClicked * 550}`;
 }
 
 // Selected Function
@@ -23,6 +27,8 @@ function selected(id) {
   if (totalClicked < 4) {
     if (seats.includes(id)) {
       alert("select another seats");
+      // selectedButton.style.background = "#F7F8F8";
+      // totalClicked -= 1;
     } else {
       selectedButton.style.background = "#1DD100";
       totalClicked += 1;
@@ -56,4 +62,41 @@ function selected(id) {
 function getById(id) {
   const a = document.getElementById(id);
   return a;
+}
+
+// coupon disable and enalbe
+document
+  .getElementById("coupon-code")
+  .addEventListener("keyup", function (event) {
+    const userTyped = event.target.value;
+    if (userTyped == "NEW15" ) {
+      document.getElementById("coupon-button").removeAttribute("disabled");
+    } else if (userTyped == "Couple 20") {
+      document.getElementById("coupon-button").removeAttribute("disabled");
+    } else {
+      document.getElementById("coupon-button").setAttribute("disabled", true);
+    }
+  });
+
+// Coupon button clicked
+
+function couponApply() {
+  const button = document.getElementById("coupon-button");
+  button.addEventListener("click", function () {
+    if (document.getElementById("coupon-code").value == "NEW15") {
+      const total = (totalClicked * 550 * 15) / 100;
+
+      document.getElementById("grand-total").innerText = `BDT ${
+        totalClicked * 550 - total
+      }`;
+      document.getElementById("coupon-div").classList.add("hidden");
+    } else if (document.getElementById("coupon-code").value == "Couple 20") {
+      const total = (totalClicked * 550 * 20) / 100;
+
+      document.getElementById("grand-total").innerText = `BDT ${
+        totalClicked * 550 - total
+      }`;
+      document.getElementById("coupon-div").classList.add("hidden");
+    }
+  });
 }
