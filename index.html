@@ -217,7 +217,8 @@
                 <div
                   class="flex gap-2 items-center justify-center rounded-xl p-[17px] border bg-[#1DD10026]"
                 >
-                  <img src="images/seat-green.png" alt="" srcset="" /><span id="seat-left"
+                  <img src="images/seat-green.png" alt="" srcset="" /><span
+                    id="seat-left"
                     class="font-inter text-lg text-[#1DD100] font-medium"
                     >40 Seats left</span
                   >
@@ -284,22 +285,22 @@
             </div>
           </div>
           <!-- Seat and Form Section -->
-          <div class="mt-6 flex bg-white rounded-2xl w-full  ">
+          <div class="mt-6 flex bg-white rounded-2xl w-full">
             <!-- Left Side -->
             <div class="w-[60%] space-y-4 p-8 border-r-4 border-dotted">
-              <h1>Select Your Seat</h1>
+              <h1 class="font-raleway text-2xl font-semibold">Select Your Seat</h1>
               <hr />
               <div class="flex justify-between">
-                <span class="flex"
+                <span class="flex font-inter text-[#03071280] text-lg font-medium gap-2 justify-center items-center"
                   ><img
                     src="images/seat-gray.png"
-                    class="w-full"
+                    class="w-full border-2 border-dashed"
                     alt=""
                     srcset=""
                   />Available</span
                 >
-                <span class="flex"
-                  ><img
+                <span class="flex font-inter text-[#1DD100] text-lg font-medium gap-2 justify-center items-center"
+                  ><img class="border-2 border-dashed"
                     src="images/seat-green.png"
                     alt=""
                     srcset=""
@@ -382,32 +383,44 @@
                 <!-- A1 - J4 -->
                 <div class="flex gap-[66px]">
                   <div class="grid grid-cols-2 gap-[25px]">
-                    <button onclick="buttonClicked('A1')" id="A1"
+                    <button
+                      onclick="buttonClicked('A1')"
+                      id="A1"
                       class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
                     >
                       A1
                     </button>
-                    <button onclick="buttonClicked('A2')" id="A2"
+                    <button
+                      onclick="buttonClicked('A2')"
+                      id="A2"
                       class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
                     >
                       A2
                     </button>
-                    <button onclick="buttonClicked('B1')" id="B1"
+                    <button
+                      onclick="buttonClicked('B1')"
+                      id="B1"
                       class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
                     >
                       B1
                     </button>
-                    <button onclick="buttonClicked('B2')" id="B2"
+                    <button
+                      onclick="buttonClicked('B2')"
+                      id="B2"
                       class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
                     >
                       B2
                     </button>
-                    <button onclick="buttonClicked('C1')" id="C1"
+                    <button
+                      onclick="buttonClicked('C1')"
+                      id="C1"
                       class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
                     >
                       C1
                     </button>
-                    <button onclick="buttonClicked('C2')" id="C2"
+                    <button
+                      onclick="buttonClicked('C2')"
+                      id="C2"
                       class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
                     >
                       C2
@@ -484,27 +497,37 @@
                     </button>
                   </div>
                   <div class="grid grid-cols-2 gap-[25px]">
-                    <button id="A3" onclick="buttonClicked('A3')"
+                    <button
+                      id="A3"
+                      onclick="buttonClicked('A3')"
                       class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
                     >
                       A3
                     </button>
-                    <button id="A4" onclick="buttonClicked('A4')"
-                      class = "bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
+                    <button
+                      id="A4"
+                      onclick="buttonClicked('A4')"
+                      class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
                     >
                       A4
                     </button>
-                    <button id="B3" onclick="buttonClicked('B3')"
+                    <button
+                      id="B3"
+                      onclick="buttonClicked('B3')"
                       class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
                     >
                       B3
                     </button>
-                    <button id="B4" onclick="buttonClicked('B4')"
+                    <button
+                      id="B4"
+                      onclick="buttonClicked('B4')"
                       class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
                     >
                       B4
                     </button>
-                    <button id="B5" onclick="buttonClicked('B5')"
+                    <button
+                      id="B5"
+                      onclick="buttonClicked('B5')"
                       class="bg-[#F7F8F8] py-[17px] px-[44px] flex justify-center items-center rounded-xl"
                     >
                       C3
@@ -590,55 +613,79 @@
             </div>
             <!-- Form Section → Right side -->
             <!-- <hr style="border-top: 1px dashed red; height: 80%" /> -->
-            <div class="p-8 space-y-6 w-[40%] ">
-              <h1>Select Your Seats</h1>
+            <div class="p-8 space-y-6 w-[40%]">
+              <h1 class="text-2xl font-raleway font-semibold">Seat Details</h1>
               <hr />
               <!-- Seat status -->
               <div class="p-8 space-y-4 bg-[#F7F8F8] rounded-xl">
-                <div class=" flex justify-between ">
-                  <span>Seat <span id="selected-seat" class="bg-[#1DD100] rounded-lg p-2">0</span> </span>
-                  <span>Class</span>
-                  <span>Price</span>
-                </div>
-                <hr>
-                <!-- append seat class and number -->
-                <div id="seat-number" class="space-y-2">
-
-                </div>
-                <hr>
                 <div class="flex justify-between">
-                  <span>Total Price</span>
-                  <span id="total-price">BDT 00</span>
+                  <span class="font-inter text-base font-medium"
+                    >Seat
+                    <span id="selected-seat" class="bg-[#1DD100] rounded-[5px] p-[2px]"
+                      >0</span
+                    >
+                  </span>
+                  <span class="font-inter text-base font-medium">Class</span>
+                  <span class="font-inter text-base font-medium">Price</span>
+                </div>
+                <hr />
+                <!-- append seat class and number -->
+                <div id="seat-number" class="space-y-2"></div>
+                <hr />
+                <div class="flex justify-between">
+                  <span class="font-inter text-base font-medium">Total Price</span>
+                  <span class="font-inter text-base font-medium" id="total-price">BDT 00</span>
                 </div>
                 <!-- Coupon code -->
-                <div id="coupon-div" class="flex justify-between bg-white rounded-2xl">
-                  <input type="text" name="" onclick="coupon()" id="coupon-code" class="border-0 px-4" placeholder="Have a coupon?">
-                  <button id="coupon-button" onclick="couponApply()" class="btn bg-[#1DD100] text-white" disabled>Apply</button>
+                <div
+                  id="coupon-div"
+                  class="flex justify-between bg-white rounded-2xl"
+                >
+                  <input
+                    type="text"
+                    name=""
+                    onclick="coupon()"
+                    id="coupon-code"
+                    class="border-0 px-4"
+                    placeholder="Have a coupon?"
+                  />
+                  <button
+                    id="coupon-button"
+                    onclick="couponApply()"
+                    class="btn bg-[#1DD100] text-white"
+                    disabled
+                  >
+                    Apply
+                  </button>
                 </div>
-                <hr>
+                <hr />
                 <!-- Grand Total -->
                 <div class="flex justify-between">
-                  <span>Grand Total</span>
-                  <span id="grand-total">BDT 00</span>
+                  <span class="font-inter text-base font-medium">Grand Total</span>
+                  <span class="font-inter text-base font-medium" id="grand-total">BDT 00</span>
                 </div>
-                
               </div>
               <!-- Username Email Number Form -->
               <div class="space-y-3">
-                <h1>Passenger Name</h1>
+                <h1 class="font-inter text-base font-semibold">Passenger Name</h1>
                 <label class="input input-bordered flex items-center gap-2">
                   <input type="text" class="grow" placeholder="Username" />
                 </label>
-                <h1>Passenger Number*</h1>
+                <h1 class="font-inter text-base font-semibold">Passenger Number*</h1>
                 <label class="input input-bordered flex items-center gap-2">
-                  <input type="text" class="grow" placeholder="number"/>
+                  <input type="text" class="grow" placeholder="number" />
                 </label>
-                <h1>Email ID</h1>
+                <h1 class="font-inter text-base font-semibold">Email ID</h1>
                 <label class="input input-bordered flex items-center gap-2">
                   <input type="email" class="grow" placeholder="Email" />
                 </label>
               </div>
-              <button onclick="location.href = 'success.html';" class="btn text-white bg-[#1DD100] rounded-xl w-full"><a href="/success.html">Next</a></button>
+              <button
+                onclick="location.href = 'success.html';"
+                class="btn text-white bg-[#1DD100] rounded-xl w-full"
+              >
+                <a href="/success.html">Next</a>
+              </button>
               <!-- <button onclick="location.href = 'success.html';" id="myButton" class="float-left submit-button" >Next</button> -->
               <div class="flex justify-evenly">
                 <p class="underline">Terms and Conditon</p>
