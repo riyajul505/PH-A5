@@ -26,14 +26,23 @@ function selected(id) {
 
   if (totalClicked < 4) {
     if (seats.includes(id)) {
+      // const selectedButton = getById(id);
+
       alert("select another seats");
       // selectedButton.style.background = "#F7F8F8";
       // totalClicked -= 1;
+      // document.getElementById(`${id}s`).classList.add("hidden");
+      // const remove = seats.indexOf(id);
+      // seats[remove] = 0;
+      // console.log(seats);
     } else {
+      const selectedButton = getById(id);
+
       selectedButton.style.background = "#1DD100";
       totalClicked += 1;
       const parentDiv = getById("seat-number");
       const childdiv = document.createElement("div");
+      childdiv.setAttribute("id", `${id}s`);
       childdiv.classList.add("flex");
       childdiv.classList.add("justify-between");
 
@@ -50,13 +59,24 @@ function selected(id) {
       childdiv.appendChild(newChild3);
 
       parentDiv.appendChild(childdiv);
+
+      seats.push(id);
+      console.log(seats);
     }
   } else {
+    // document.getElementById(`${id}s`).classList.add('hidden');
+    // selectedButton.style.background = "#F7F8F8";
+    // totalClicked -= 1;
+    // document.getElementById(`${id}s`).classList.add("hidden");
+    // const remove = seats.indexOf(id);
+    // seats[remove] = 0;
+    // console.log(seats);
+
     alert("you can select max four seats");
   }
-  seats.push(id);
-
-  console.log("file connected and total clicked", totalClicked);
+  // seats.push(id);
+  // document.getElementById(`${id}s`).classList.add('hidden');
+  // console.log("file connected and total clicked", totalClicked);
 }
 
 function getById(id) {
@@ -69,7 +89,7 @@ document
   .getElementById("coupon-code")
   .addEventListener("keyup", function (event) {
     const userTyped = event.target.value;
-    if (userTyped == "NEW15" ) {
+    if (userTyped == "NEW15") {
       document.getElementById("coupon-button").removeAttribute("disabled");
     } else if (userTyped == "Couple 20") {
       document.getElementById("coupon-button").removeAttribute("disabled");
